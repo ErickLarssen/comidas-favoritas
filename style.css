@@ -82,7 +82,7 @@ header li.active, header li:hover{
     color: #fff;
     position: absolute;
     top: 10%;
-    left: 60%;
+    left: 70%;
     text-align: justify;
     width: 350px;
 }
@@ -128,23 +128,27 @@ header li.active, header li:hover{
 
 
 #prev,
-#next{
+#next {
     position: absolute;
     border: none;
     top: 50%;
-    left: 250px;
     font-size: 100px;
     font-family: cursive;
     background-color: transparent;
     color: #fff;
     font-weight: bold;
-    opacity: 0.3
+    opacity: 0.3;
 }
-#next{
-    left: unset;
-    right: 250px;
+
+#prev {
+    left: 100px; /* Aumente esse valor para afastar mais */
 }
+
+#next {
+    right: 100px; /* Aumente esse valor para afastar mais */
+}
+
 #next:hover,
-#prev:hover{
-    opacity: 1
+#prev:hover {
+    opacity: 1;
 }
