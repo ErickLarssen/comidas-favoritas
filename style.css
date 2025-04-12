@@ -194,3 +194,42 @@ header li.active, header li:hover{
         font-size: 10px;
     }
 }
+
+@media (max-width: 393px){
+  header li{
+    padding: 15px 20px;
+  }
+  .content{
+    left: 70%;
+    width: 25%;
+    top: 8%;
+  }
+  
+  .content h1{
+    font-size: large;
+  }
+  
+  .des{
+    text-align: left;
+    word-break: break-word;
+  }
+  
+  .content button{
+    padding: 5px 10px;
+  }
+  
+  #prev,
+  #next{
+    top: 40%;
+  }
+  
+  .images{
+    top: 7%;
+    width: 95vw;
+    height: 95vh;
+  }
+  
+  .images .item img{
+    height: 30vh;
+  }
+}
