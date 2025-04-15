@@ -21,7 +21,14 @@ header ul{
 header li{
     padding: 30px 40px;
     color: #fff;
+    cursor: pointer;
 }
+header li a{
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+}
+
 header li.active, header li:hover{
     border-bottom: 2px solid #fff;
 }
@@ -56,7 +63,7 @@ header li.active, header li:hover{
 }
 .images{
     position: absolute;
-    bottom: 0%;
+    bottom: -150px;
     left: 50%;
     --rotate: 0deg;
     transform: translate(-50%, 50%) rotate(var(--rotate));
@@ -75,7 +82,7 @@ header li.active, header li:hover{
     rotate: calc(60deg * var(--i));
 }
 .images .item img{
-    height: 420px;
+    height: 350px;
 }
 
 .content{
@@ -98,6 +105,14 @@ header li.active, header li:hover{
     color: #fff;
     border: none;
     float: right;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.content button:hover {
+    background-color: #f29c53;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 .content .item{
     display: none;
@@ -138,6 +153,7 @@ header li.active, header li:hover{
     color: #fff;
     font-weight: bold;
     opacity: 0.3;
+    cursor: pointer;
 }
 
 #prev{
@@ -190,46 +206,65 @@ header li.active, header li:hover{
     .content{
         left: 15%;
     }
+    .content h1{
+        margin-top: 35px;
+        margin-left: 190px;
+        font-size: 30px;
+    }
+
     .des{
-        font-size: 10px;
+        margin-left: 150px;
+       text-align: right;
+        max-width: 60%;
+        word-break: break-word;
+    }
+    .images .item img{
+        height: 280px;
+    }
+
+    #prev,
+    #next{
+        margin-top: 190px;
     }
 }
 
 @media (max-width: 393px){
-  header li{
-    padding: 15px 20px;
-  }
-  .content{
-    left: 70%;
-    width: 25%;
-    top: 8%;
-  }
-  
-  .content h1{
-    font-size: large;
-  }
-  
-  .des{
-    text-align: left;
-    word-break: break-word;
-  }
-  
-  .content button{
-    padding: 5px 10px;
-  }
-  
-  #prev,
-  #next{
-    top: 40%;
-  }
-  
-  .images{
-    top: 7%;
-    width: 95vw;
-    height: 95vh;
-  }
-  
-  .images .item img{
-    height: 30vh;
-  }
+    .title{
+        font-size: 75px;
+    }
+    .images{
+        top: -45%;
+    }
+    .content{
+        left: 15%;
+    }
+    .content h1{
+        margin-top: 35px;
+        margin-left: 163px;
+        font-size: 30px;
+    }
+    .content button{
+        margin-right: 40px;
+    }
+
+    .des{
+        margin-left: 140px;
+        text-align: right;
+        max-width: 50%;
+        word-break: break-word;
+    }
+    .images .item img{
+        height: 280px;
+    }
+
+    #prev,
+    #next{
+        margin-top: 190px;
+    }
+}
+
+@media (max-width: 375px){
+    .images .item img{
+        height: 200px;
+    }
 }
