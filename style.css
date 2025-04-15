@@ -268,3 +268,33 @@ header li.active, header li:hover{
         height: 200px;
     }
 }
+
+@media (max-width: 320px){
+    .title{
+        margin-top: 30px;
+        font-size: 60px;
+    }
+
+    .content h1{
+        margin-top: 55px;
+        font-size: 20px;
+    }
+
+    .des{
+        max-width: 40%;
+    }
+
+    .content button{
+        margin-right: 70px;
+    }
+
+    .images .item img{
+        margin-top: -800px;
+        height: 80px;
+    }
+
+    #prev,
+    #next{
+        margin-top: -350px;
+    }
+}
